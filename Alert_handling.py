@@ -6,7 +6,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
-
+# new changes
 options=webdriver.ChromeOptions()
 options.add_experimental_option("detach",True)
 service=Service("C:/Users/rushi/OneDrive/Desktop/chromedriver.exe")
@@ -15,6 +15,7 @@ driver.implicitly_wait(10)
 wait=WebDriverWait(driver,10)
 driver.get("https://demo.automationtesting.in/Alerts.html")
 driver.maximize_window()
+time.sleep(2)
 # alert with ok
 
 # driver.find_element(By.XPATH,"//button[contains(text(),'click the button to display an  alert box')]").click()
@@ -37,4 +38,9 @@ driver.find_element(By.XPATH,"//button[text()='click the button to demonstrate t
 alert=driver.switch_to.alert
 time.sleep(2)
 alert.send_keys('rushikesh')
-print("File changed.!!!")
+<<<<<<< HEAD
+print("File changed by Manju!!!")
+=======
+time.sleep(3)
+
+>>>>>>> d4f8830502bfd62cb0b97e35c760c863086ee83d
