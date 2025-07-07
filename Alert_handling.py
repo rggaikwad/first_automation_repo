@@ -16,6 +16,7 @@ wait=WebDriverWait(driver,10)
 driver.get("https://demo.automationtesting.in/Alerts.html")
 driver.maximize_window()
 time.sleep(2)
+
 # alert with ok
 
 # driver.find_element(By.XPATH,"//button[contains(text(),'click the button to display an  alert box')]").click()
@@ -42,6 +43,7 @@ alert.send_keys('rushikesh')
 print("File changed by Manju!!!")
 =======
 time.sleep(3)
+time.sleep(1)
 
 
 
